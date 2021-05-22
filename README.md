@@ -133,17 +133,17 @@ git stash apply <stash>                 # Apply given <stash>, or if none given 
 git branch my-branch       # Create a new branch called my-branch
 git checkout my-branch     # Checkout ("Switch" to work on) my-branch
 git checkout -b my-branch  # Create a new branch called my-branch AND switch to it
-git branch -d my-branch    # Delete branch my-branch that has been merged with master
-git branch -D my-branch    # Forcefully delete a branch my-branch that hasn't been merged to master
+git branch -d my-branch    # Delete branch my-branch that has been merged with main
+git branch -D my-branch    # Forcefully delete a branch my-branch that hasn't been merged to main
 
 # Merging
-git merge master         # Merge the master branch into your currently checked out branch.
-git rebase master        # Rebase current branch on top of master branch
+git merge main         # Merge the main branch into your currently checked out branch.
+git rebase main        # Rebase current branch on top of main branch
 
 # Working with Remotes
 git remote              # Show your current remotes
 git remote -v           # Show your current remotes and their URLs
-git push                # Publish your commits to the upstream master of your currently checked out branch
+git push                # Publish your commits to the upstream main of your currently checked out branch
 git push -u origin my-branch  # Push newly created branch to remote repo setting up to track remote branch from origin.
                               # No need to specify remote branch name, for e.g., when doing a 'git pull' on that branch.
 git pull                # Pull changes from the remote to your currently checked out branch
